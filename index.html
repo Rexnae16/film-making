@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Filmmaking Essentials</title>
+  
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  
+  <style>
+    body {
+      padding-top: 60px;
+      padding-bottom: 60px;
+      background: #d4e4f5;
+    }
+    .header-section {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <header class="header-section">
+      <h1>Welcome to IMOGI PRODUCTIONS</h1>
+      <p class="lead">Learn the art and craft of filmmaking</p>
+      <!-- Button to trigger Modal -->
+      <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#infoModal" data-bs-toggle="tooltip" data-bs-placement="right" title="Learn more about filmmaking">
+        What is Filmmaking?
+      </button>
+    </header>
+
+    <!-- Modal -->
+    <div class="modal fade" id="infoModal" tabindex="-1" aria-labelledby="infoModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="infoModalLabel">What is Filmmaking?</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <p>Filmmaking is the process of making a motion picture, from an initial story or idea, through scriptwriting, shooting, editing, and final distribution. It’s an art that combines storytelling, technical skills, and creativity.</p>
+            <ul>
+              <li>Planning and scripting</li>
+              <li>Shooting and directing</li>
+              <li>Editing and post-production</li>
+              <li>Distribution and exhibition</li>
+            </ul>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Accordion: Filmmaking Steps -->
+    <section class="mb-5">
+      <h2>Filmmaking Process Steps</h2>
+      <div class="accordion" id="filmmakingSteps">
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="stepOneHeading">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#stepOne" aria-expanded="true" aria-controls="stepOne">
+              1. Pre-production
+            </button>
+          </h2>
+          <div id="stepOne" class="accordion-collapse collapse show" aria-labelledby="stepOneHeading" data-bs-parent="#filmmakingSteps">
+            <div class="accordion-body">
+              Scriptwriting, casting, location scouting, and planning.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="stepTwoHeading">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#stepTwo" aria-expanded="false" aria-controls="stepTwo">
+              2. Production
+            </button>
+          </h2>
+          <div id="stepTwo" class="accordion-collapse collapse" aria-labelledby="stepTwoHeading" data-bs-parent="#filmmakingSteps">
+            <div class="accordion-body">
+              Shooting the film with actors, crew, and equipment.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="stepThreeHeading">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#stepThree" aria-expanded="false" aria-controls="stepThree">
+              3. Post-production
+            </button>
+          </h2>
+          <div id="stepThree" class="accordion-collapse collapse" aria-labelledby="stepThreeHeading" data-bs-parent="#filmmakingSteps">
+            <div class="accordion-body">
+              Editing, sound design, visual effects, and final cut.
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Slider / Carousel -->
+    <section class="mb-5">
+      <h2>Filmmaking Gallery</h2>
+      <div id="filmCarousel" class="carousel slide" data-bs-ride="carousel" aria-label="Filmmaking images carousel">
+        <div class="carousel-inner rounded shadow">
+          <div class="carousel-item active">
+            <img src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=800&q=80" class="d-block w-100" alt="Camera on tripod" />
+            <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded">
+              <h5>Camera Setup</h5>
+              <p>Preparing for the perfect shot.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=800&q=80" class="d-block w-100" alt="Film crew working" />
+            <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded">
+              <h5>On Set</h5>
+              <p>Teamwork makes the dream work.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=800&q=80" class="d-block w-100" alt="Editing on computer" />
+            <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded">
+              <h5>Post-Production</h5>
+              <p>Bringing the story to life.</p>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#filmCarousel" data-bs-slide="prev" aria-label="Previous slide">
+          <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#filmCarousel" data-bs-slide="next" aria-label="Next slide">
+          <span class="carousel-control-next-icon"></span>
+        </button>
+      </div>
+    </section>
+
+    <!-- Bootstrap Tabs -->
+    <section class="mb-5">
+      <h2>Filmmaking Genres</h2>
+      <ul class="nav nav-tabs" id="genreTabs" role="tablist">
+        <li class="nav-item" role="presentation">
+          <button class="nav-link active" id="drama-tab" data-bs-toggle="tab" data-bs-target="#drama" type="button" role="tab" aria-controls="drama" aria-selected="true">Drama</button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link" id="comedy-tab" data-bs-toggle="tab" data-bs-target="#comedy" type="button" role="tab" aria-controls="comedy" aria-selected="false">Comedy</button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link" id="documentary-tab" data-bs-toggle="tab" data-bs-target="#documentary" type="button" role="tab" aria-controls="documentary" aria-selected="false">Documentary</button>
+        </li>
+      </ul>
+      <div class="tab-content p-3 border border-top-0 rounded-bottom" id="genreTabsContent">
+        <div class="tab-pane fade show active" id="drama" role="tabpanel" aria-labelledby="drama-tab">
+          <p>Drama films focus on realistic characters and emotional themes. They explore intense relationships and conflicts.</p>
+        </div>
+        <div class="tab-pane fade" id="comedy" role="tabpanel" aria-labelledby="comedy-tab">
+          <p>Comedy films aim to entertain and amuse through humor, satire, or lighthearted storytelling.</p>
+        </div>
+        <div class="tab-pane fade" id="documentary" role="tabpanel" aria-labelledby="documentary-tab">
+          <p>Documentaries present factual stories about real people, events, or issues with an informative and educational approach.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Bootstrap List -->
+    <section class="mb-5">
+      <h2>Essential Filmmaking Tools</h2>
+      <ul class="list-group">
+        <li class="list-group-item">Camera</li>
+        <li class="list-group-item">Microphone</li>
+        <li class="list-group-item">Lighting Kit</li>
+        <li class="list-group-item">Tripod</li>
+        <li class="list-group-item">Editing Software</li>
+      </ul>
+    </section>
+
+    <!-- Bootstrap Form -->
+    <section class="mb-5">
+      <h2>Contact Us</h2>
+      <form>
+        <div class="mb-3">
+          <label for="nameInput" class="form-label">Name</label>
+          <input type="text" class="form-control" id="nameInput" placeholder="Your name" required>
+        </div>
+        <div class="mb-3">
+          <label for="emailInput" class="form-label">Email address</label>
+          <input type="email" class="form-control" id="emailInput" placeholder="name@example.com" required>
+        </div>
+        <div class="mb-3">
+          <label for="messageTextarea" class="form-label">Message</label>
+          <textarea class="form-control" id="messageTextarea" rows="3" placeholder="Your message here..." required></textarea>
+        </div>
+        <button type="submit" class="btn btn-success" data-bs-toggle="tooltip" data-bs-placement="top" title="Send us a message">Send</button>
+      </form>
+    </section>
+  </div>
+
+  <!-- Bootstrap JS (with Popper for tooltips, modals) -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+  <script>
+    // Enable all tooltips
+    const tooltipTriggerList = [...document.querySelectorAll('[data-bs-toggle="tooltip"]')];
+    tooltipTriggerList.forEach(tip => new bootstrap.Tooltip(tip));
+  </script>
+  
+</body>
+</html>
